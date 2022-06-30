@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/extui">
+        <file>char_diameter.png</file>
+        <file>char_pm.png</file>
+        <file>dirneg.png</file>
+        <file>dirpos.png</file>
+        <file>dlgmodifymirror.png</file>
+        <file>dlgmodifymoverotate.png</file>
+        <file>dlgmodifyrotate.png</file>
+        <file>dlgmodifyrotate2.png</file>
+        <file>dlgmodifyscale.png</file>
+        <file>dlgmove1.png</file>
+        <file>relzerolock.png</file>
+        <file>relzeromove.png</file>
+        <file>restrictnothing.png</file>
+        <file>restricthorizontal.png</file>
+        <file>snapcenter.png</file>
+        <file>snapendpoint.png</file>
+        <file>snapgrid.png</file>
+        <file>snapintersection.png</file>
+        <file>snapintersectionm.png</file>
+        <file>snapmiddle.png</file>
+         <file>snaponentity.png</file>
+        <file>tolerance1.png</file>
+        <file>tolerance2.png</file>
+    </qresource>
+</RCC>

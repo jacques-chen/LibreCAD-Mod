@@ -1,0 +1,3187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="actions">
+      <UniqueIdentifier>{0a97dd91-9810-4f36-9413-0215b8766295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{10e3d2bc-2501-4a0e-838c-9375a4edf37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{86ddbb2d-beb5-4cc7-a3ad-815758df5099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{69f967f3-e17f-4402-809d-b0eb4cc261b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins">
+      <UniqueIdentifier>{f2b6631a-9672-4f6d-a38a-c0a10adb9fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{1f7ea2a5-60ae-4cfd-9ed1-e984c50ccffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{66a2781b-64e1-4b56-aa36-cb38711e3add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\actions">
+      <UniqueIdentifier>{1bd5ba53-a78a-49e5-9827-f3fff105f5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\creation">
+      <UniqueIdentifier>{cdb3441c-7dd3-4957-ac82-3a6cbbba19c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\debug">
+      <UniqueIdentifier>{d0338764-58f8-4817-8d96-c7b0d90538df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\engine">
+      <UniqueIdentifier>{b42cd8c3-7061-425d-9e0d-33e75b0b901f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\fileio">
+      <UniqueIdentifier>{96477533-adec-45ed-b658-e806fbd147fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\filters">
+      <UniqueIdentifier>{75c6e6ba-84c4-45fb-8485-96ddd68176dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\generators">
+      <UniqueIdentifier>{145a2a55-7e3d-4db7-9b09-e97d48d23263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gui">
+      <UniqueIdentifier>{a32489fb-83b0-4ea6-9f71-50446d4a47cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\information">
+      <UniqueIdentifier>{17b1cef9-52a9-4f4a-a8b1-22ed2bf70a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\math">
+      <UniqueIdentifier>{0d7aa07a-0153-43fc-90f5-d05f62b1875f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\modification">
+      <UniqueIdentifier>{ed94fd12-1836-4505-a947-5f2c58bddddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\printing">
+      <UniqueIdentifier>{d6804f48-7834-44c1-b53b-0ba4954dd056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\console_dxf2pdf">
+      <UniqueIdentifier>{b370907b-062e-443d-8e68-3f1ea43bf085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\forms">
+      <UniqueIdentifier>{52aeaad5-1c21-4bd5-a8f5-783021bd8300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\generic">
+      <UniqueIdentifier>{6f984774-b9cb-48fa-97c9-0d4bf4db0a4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\intern">
+      <UniqueIdentifier>{33b41e9d-dbb6-4ddc-8400-bc81fae8d14a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ts\librecad_en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\ts\librecad_zh_cn.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\icons\add.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\angle_line_to_line.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\append_node.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\arc_3_points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\arc_center_point_angle.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\arc_concentric.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\arc_continuation.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\attributes.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\bevel.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\black_n_white_mode.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\blockdefreeze.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\blockfreeze.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\camera.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\center_to_page.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\char_diameter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\char_pm.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_2_points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_2_points_radius.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_3_points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_center_point.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_center_radius.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_concentric.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_inscribed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_tangential_2circles_point.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_tangential_2circles_radius.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_tangential_2points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\circle_tangential_3entities.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\close.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\close_all.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color00.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color08.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color09.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\color14.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\colorxx.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\construction_layer.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\copy.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\create_block.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\create_equidistant_polyline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\create_menu.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\create_polyline_from_existing_segments.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\create_toolbar.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\cur_cad_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\cur_del_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\cur_glass_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\cur_hand_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\cur_select_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\cursor.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\cut.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\delete.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\delete_between_nodes.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\delete_node.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\deselect_all.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\deselect_contour.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\deselect_intersected_entities.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\deselect_layer.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\deselect_window.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dim_aligned.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dim_angular.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dim_diametric.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dim_leader.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dim_linear.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dim_radial.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dirneg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dirpos.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\distance_point_to_entity.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\distance_point_to_point.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\divide.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dlgmodifymirror.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dlgmodifymoverotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dlgmodifyrotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dlgmodifyrotate2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dlgmodifyscale.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\dlgmove1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dockwidgets_bottom.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dockwidgets_floating.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dockwidgets_left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dockwidgets_right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\dockwidgets_top.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\main\document.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\down.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\downmost.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\draft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\drawing_settings.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\main\editclear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\ellipse_4_points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\ellipse_arc_axis.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\ellipse_axis.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\ellipse_center_3_points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\ellipse_foci_point.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\ellipse_inscribed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\ellipses.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\exclusive.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\explode.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\explode_text_to_letters.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\export.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\export_image.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\export_pdf.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\res\extui\extui.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\res\icons\fillet.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\fit_to_page.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\folderclosed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\folderopen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\licenses\gpl-2.0.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\grid.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\hatch.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\hiddenblock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\res\icons\icons.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\res\icons\import.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\insert_active_block.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\insert_node.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\main\intro_librecad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\invisible.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\layertoggle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\main\librecad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\..\licenses\licenses.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\res\icons\line.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_2p.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_angle.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_bisector.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_freehand.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_horizontal.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_parallel.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_parallel_p.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_perpendicular.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_rectangle.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_relative_angle.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_tangent_cc.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_tangent_pc.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_tangent_perpendicular.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\line_vertical.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype00.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\linetype07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\lock_rel_zero.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\locked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\lockedlayer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\res\main\main.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\res\icons\measure.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mirror.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\modify.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\modify_copy.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\modify_move.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mouse.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\move_rotate.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_bottomcenter.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_bottomleft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_bottomright.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_middlecenter.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_middleleft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_middleright.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_topcenter.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_topleft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\mtext_align_topright.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\multi_pages.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\new.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\new_from_template.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\noconstruction.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\noprint.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\offset.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\open.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\options.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\paste.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\polygonal_area.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\polylines.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\polylines_polyline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\print.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\print_preview.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\properties.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\quit.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\licenses\readme.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\redo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\redraw.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\relzerolock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\relzeromove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\remove.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\rename_active_block.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\restr_hor.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\restr_ortho.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\restr_ver.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\restricthorizontal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\restrictnothing.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\revert_direction.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\rotate.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\rotate2.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\save.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\save_all.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\save_as.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\scale.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\scaleLineWidth.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\select.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\select_all.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\select_entity.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\select_intersected_entities.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\select_inverted.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\select_window.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\set_rel_zero.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\settings.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_center.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_distance.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_endpoints.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_entity.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_exclusive.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_free.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_grid.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_intersection.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\snap_middle.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\snapcenter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\snapendpoint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\snapgrid.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\snapintersection.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\snapintersectionm.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\snapmiddle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\snaponentity.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\main\splash_librecad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\spline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\spline_points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\stretch.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_baselinecenter.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_baselineleft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_baselineright.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_bottomcenter.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_bottomleft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_bottomright.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_middlecenter.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_middleleft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_middleright.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_topcenter.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_topleft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\text_align_topright.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\tolerance1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\extui\tolerance2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\total_length_selected_entities.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\trim.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\trim2.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\trim_segments.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\trim_value.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="..\res\ui\ui.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="..\res\icons\undo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\unlocked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\unlockedlayer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\up.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\upmost.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\visible.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\visibleblock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width00.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width08.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width09.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width10.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\ui\width12.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\zoom_auto.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\zoom_in.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\zoom_out.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\zoom_pan.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\zoom_previous.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\res\icons\zoom_window.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\res\main\librecad.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="actions\lc_actiondrawcircle2pr.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\lc_actiondrawsplinepoints.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\lc_actionfileexportmakercam.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\lc_actionlayerstoggleconstruction.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblocksadd.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblocksattributes.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblockscreate.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblocksedit.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblocksexplode.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblocksfreezeall.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblocksinsert.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblocksremove.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblockssave.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionblockstoggleview.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondefault.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondimaligned.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondimangular.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondimdiametric.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondimension.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondimleader.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondimlinear.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondimradial.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawarc.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawarc3p.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawarctangential.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircle2p.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircle3p.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcirclecr.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircleinscribe.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircletan1_2p.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircletan2.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircletan2_1p.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircletan3.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawellipse4points.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawellipseaxis.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawellipsecenter3points.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawellipsefocipoint.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawellipseinscribe.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawhatch.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawimage.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawline.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlineangle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinebisector.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinefree.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinehorvert.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlineorthtan.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlineparallel.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlineparallelthrough.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinerectangle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinerelangle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinetangent1.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinetangent2.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawmtext.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawpoint.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawpolyline.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawspline.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawtext.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioneditcopy.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioneditpaste.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioneditundo.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionfilenew.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionfilenewtemplate.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionfileopen.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionfilesave.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionfilesaveas.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioninfoangle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioninfoarea.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioninfodist.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioninfodist2.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioninfoinside.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioninfototallength.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayersadd.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayersedit.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayersfreezeall.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayerslockall.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayersremove.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayerstogglelock.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayerstoggleprint.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlayerstoggleview.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlibraryinsert.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionlockrelativezero.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyattributes.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifybevel.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifycopy.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifycut.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifydelete.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifydeletefree.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifydeletequick.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyentity.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyexplodetext.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifymirror.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifymove.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifymoverotate.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyoffset.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyrevertdirection.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyrotate.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyrotate2.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyround.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyscale.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifystretch.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifytrim.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifytrimamount.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionoptionsdrawing.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionorder.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionpolylineadd.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionpolylineappend.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionpolylinedel.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionpolylinedelbetween.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionpolylineequidistant.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionpolylinesegment.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionpolylinetrim.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionprintpreview.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselect.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectall.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectbase.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectcontour.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectintersected.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectinvert.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectlayer.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectsingle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectwindow.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionsetrelativezero.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionsetsnapmode.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionsetsnaprestriction.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionsnapintersectionmanual.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiontoolregeneratedimensions.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomauto.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomautoy.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomin.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoompan.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomprevious.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomredraw.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomscroll.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomwindow.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd\rs_commands.cpp">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_actioninterface.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_preview.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_previewactioninterface.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_snapper.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\creation\rs_creation.cpp">
+      <Filter>lib\creation</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\debug\rs_debug.cpp">
+      <Filter>lib\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\lc_hyperbola.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\lc_rect.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\lc_splinepoints.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\lc_undosection.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_arc.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_atomicentity.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_block.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_blocklist.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_circle.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_clipboard.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_color.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_constructionline.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_dimaligned.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_dimangular.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_dimdiametric.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_dimension.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_dimlinear.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_dimradial.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_document.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_ellipse.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_entity.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_entitycontainer.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_flags.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_font.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_fontlist.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_graphic.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_hatch.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_image.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_insert.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_layer.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_layerlist.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_leader.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_line.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_mtext.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_overlaybox.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_overlayline.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_pattern.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_patternlist.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_pen.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_point.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_polyline.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_settings.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_solid.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_spline.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_system.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_text.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_undo.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_undoable.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_undocycle.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_units.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_utility.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_variabledict.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_vector.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\fileio\rs_fileio.cpp">
+      <Filter>lib\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\filters\rs_filtercxf.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\filters\rs_filterdxfrw.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\filters\rs_filterlff.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\generators\lc_makercamsvg.cpp">
+      <Filter>lib\generators</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\generators\lc_xmlwriterqxmlstreamwriter.cpp">
+      <Filter>lib\generators</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_dialogfactory.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_eventhandler.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_graphicview.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_grid.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_linetypepattern.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_painter.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_painterqt.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_staticgraphicview.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\information\rs_infoarea.cpp">
+      <Filter>lib\information</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\information\rs_information.cpp">
+      <Filter>lib\information</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\information\rs_locale.cpp">
+      <Filter>lib\information</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\math\lc_quadratic.cpp">
+      <Filter>lib\math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\math\rs_math.cpp">
+      <Filter>lib\math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\math\TCALC.cpp">
+      <Filter>lib\math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\modification\rs_modification.cpp">
+      <Filter>lib\modification</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\modification\rs_selection.cpp">
+      <Filter>lib\modification</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\printing\lc_printing.cpp">
+      <Filter>lib\printing</Filter>
+    </ClCompile>
+    <ClCompile Include="main\doc_plugin_interface.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lc_application.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\mainwindowx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\qc_applicationwindow.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\qc_dialogfactory.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\qc_mdiwindow.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\console_dxf2pdf\console_dxf2pdf.cpp">
+      <Filter>main\console_dxf2pdf</Filter>
+    </ClCompile>
+    <ClCompile Include="main\console_dxf2pdf\pdf_print_loop.cpp">
+      <Filter>main\console_dxf2pdf</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lc_actionfactory.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lc_actiongroupmanager.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lc_centralwidget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lc_dockwidget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lc_penwizard.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lc_widgetfactory.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lg_dimzerosbox.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_actionhandler.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_blockwidget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_colorbox.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_commandedit.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_commandhistory.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_dialogfactory.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_filedialog.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_fontbox.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_graphicview.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_layerbox.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_layerwidget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_librarywidget.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_linetypebox.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_patternbox.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_pentoolbar.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_recentfiles.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_widthbox.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\twostackedlabels.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\lc_dlgsplinepoints.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\lc_widgetoptionsdialog.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_activelayername.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_arcoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_arctangentialoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_beveloptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_blockdialog.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_circleoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_circletan2options.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_commandwidget.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_coordinatewidget.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dimensionlabeleditor.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dimoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgarc.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgattributes.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgcircle.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgcopy.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgdimension.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgdimlinear.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgellipse.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlghatch.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgimage.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgimageoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlginitial.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlginsert.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgline.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgmirror.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgmoverotate.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgmtext.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgoptionsdrawing.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgoptionsgeneral.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgoptionsmakercam.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgpoint.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgpolyline.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgrotate.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgrotate2.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgscale.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgspline.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_dlgtext.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_exitdialog.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_imageoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_insertoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_layerdialog.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_libraryinsertoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_lineangleoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_linebisectoroptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_lineoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_lineparalleloptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_lineparallelthroughoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_linerelangleoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_modifyoffsetoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_mousewidget.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_moverotateoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_mtextoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_polylineequidistantoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_polylineoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_printpreviewoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_roundoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_selectionwidget.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_snapdistoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_snapmiddleoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_snaptoolbar.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_splineoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_textoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_trimamountoptions.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_widgetpen.cpp">
+      <Filter>ui\forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\generic\actionlist.cpp">
+      <Filter>ui\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\generic\colorcombobox.cpp">
+      <Filter>ui\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\generic\colorwizard.cpp">
+      <Filter>ui\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\generic\comboboxoption.cpp">
+      <Filter>ui\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\generic\linklist.cpp">
+      <Filter>ui\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\generic\textfileviewer.cpp">
+      <Filter>ui\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\generic\widgetcreator.cpp">
+      <Filter>ui\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="test\lc_simpletests.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\intern\qc_actiongetent.cpp">
+      <Filter>plugins\intern</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\intern\qc_actiongetpoint.cpp">
+      <Filter>plugins\intern</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\intern\qc_actiongetselect.cpp">
+      <Filter>plugins\intern</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\lc_actiondrawcircle2pr.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\lc_actiondrawsplinepoints.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\lc_actionfileexportmakercam.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\lc_actionlayerstoggleconstruction.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblocksadd.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblocksattributes.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblockscreate.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblocksedit.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblocksexplode.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblocksfreezeall.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblocksinsert.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblocksremove.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblockssave.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionblockstoggleview.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondefault.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondimaligned.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondimangular.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondimdiametric.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondimension.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondimleader.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondimlinear.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondimradial.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawarc.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawarc3p.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawarctangential.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircle.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircle2p.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircle3p.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcirclecr.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircleinscribe.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircletan1_2p.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircletan2.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircletan2_1p.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawcircletan3.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawellipse4points.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawellipseaxis.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawellipsecenter3points.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawellipsefocipoint.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawellipseinscribe.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawhatch.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawimage.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawline.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlineangle.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlinebisector.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlinefree.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlinehorvert.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlineorthtan.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlineparallel.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlineparallelthrough.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlinerectangle.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlinerelangle.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlinetangent1.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawlinetangent2.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawmtext.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawpoint.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawpolyline.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawspline.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiondrawtext.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioneditcopy.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioneditpaste.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioneditundo.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionfilenew.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionfilenewtemplate.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionfileopen.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionfilesave.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionfilesaveas.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioninfoangle.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioninfoarea.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioninfodist.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioninfodist2.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioninfoinside.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actioninfototallength.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayersadd.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayersedit.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayersfreezeall.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayerslockall.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayersremove.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayerstogglelock.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayerstoggleprint.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlayerstoggleview.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlibraryinsert.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionlockrelativezero.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyattributes.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifybevel.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifycopy.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifycut.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifydelete.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifydeletefree.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifydeletequick.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyentity.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyexplodetext.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifymirror.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifymove.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifymoverotate.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyoffset.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyrevertdirection.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyrotate.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyrotate2.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyround.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifyscale.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifystretch.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifytrim.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionmodifytrimamount.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionoptionsdrawing.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionorder.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionpolylineadd.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionpolylineappend.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionpolylinedel.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionpolylinedelbetween.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionpolylineequidistant.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionpolylinesegment.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionpolylinetrim.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionprintpreview.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselect.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectall.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectbase.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectcontour.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectintersected.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectinvert.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectlayer.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectsingle.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionselectwindow.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionsetrelativezero.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionsetsnapmode.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionsetsnaprestriction.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionsnapintersectionmanual.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actiontoolregeneratedimensions.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoomauto.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoomautoy.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoomin.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoompan.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoomprevious.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoomredraw.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoomscroll.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="actions\rs_actionzoomwindow.h">
+      <Filter>actions</Filter>
+    </QtMoc>
+    <QtMoc Include="lib\actions\rs_actioninterface.h">
+      <Filter>lib\actions</Filter>
+    </QtMoc>
+    <QtMoc Include="lib\gui\rs_eventhandler.h">
+      <Filter>lib\gui</Filter>
+    </QtMoc>
+    <QtMoc Include="lib\gui\rs_graphicview.h">
+      <Filter>lib\gui</Filter>
+    </QtMoc>
+    <QtMoc Include="main\lc_application.h">
+      <Filter>main</Filter>
+    </QtMoc>
+    <QtMoc Include="main\mainwindowx.h">
+      <Filter>main</Filter>
+    </QtMoc>
+    <QtMoc Include="main\qc_applicationwindow.h">
+      <Filter>main</Filter>
+    </QtMoc>
+    <QtMoc Include="main\qc_mdiwindow.h">
+      <Filter>main</Filter>
+    </QtMoc>
+    <QtMoc Include="main\console_dxf2pdf\pdf_print_loop.h">
+      <Filter>main\console_dxf2pdf</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\lc_actionfactory.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\lc_actiongroupmanager.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\lc_centralwidget.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\lc_dockwidget.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\lc_penwizard.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\lc_widgetfactory.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\lg_dimzerosbox.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_actionhandler.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_blockwidget.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_colorbox.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_commandedit.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_commandhistory.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_fontbox.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_graphicview.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_layerbox.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_layerwidget.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_librarywidget.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_linetypebox.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_patternbox.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_pentoolbar.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_recentfiles.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_scrollbar.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\qg_widthbox.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\twostackedlabels.h">
+      <Filter>ui</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\lc_dlgsplinepoints.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\lc_widgetoptionsdialog.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_activelayername.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_arcoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_arctangentialoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_beveloptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_blockdialog.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_circleoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_circletan2options.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_commandwidget.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_coordinatewidget.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dimensionlabeleditor.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dimoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgarc.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgattributes.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgcircle.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgcopy.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgdimension.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgdimlinear.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgellipse.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlghatch.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgimage.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgimageoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlginitial.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlginsert.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgline.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgmirror.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgmoverotate.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgmtext.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgoptionsdrawing.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgoptionsgeneral.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgoptionsmakercam.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgpoint.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgpolyline.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgrotate.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgrotate2.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgscale.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgspline.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_dlgtext.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_exitdialog.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_imageoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_insertoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_layerdialog.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_libraryinsertoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_lineangleoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_linebisectoroptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_lineoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_lineparalleloptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_lineparallelthroughoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_linerelangleoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_modifyoffsetoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_mousewidget.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_moverotateoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_mtextoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_polylineequidistantoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_polylineoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_printpreviewoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_roundoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_selectionwidget.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_snapdistoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_snapmiddleoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_snaptoolbar.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_splineoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_textoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_trimamountoptions.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\forms\qg_widgetpen.h">
+      <Filter>ui\forms</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\generic\actionlist.h">
+      <Filter>ui\generic</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\generic\colorcombobox.h">
+      <Filter>ui\generic</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\generic\colorwizard.h">
+      <Filter>ui\generic</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\generic\comboboxoption.h">
+      <Filter>ui\generic</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\generic\linklist.h">
+      <Filter>ui\generic</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\generic\textfileviewer.h">
+      <Filter>ui\generic</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\generic\widgetcreator.h">
+      <Filter>ui\generic</Filter>
+    </QtMoc>
+    <QtMoc Include="test\lc_simpletests.h">
+      <Filter>test</Filter>
+    </QtMoc>
+    <QtMoc Include="plugins\intern\qc_actiongetent.h">
+      <Filter>plugins\intern</Filter>
+    </QtMoc>
+    <QtMoc Include="plugins\intern\qc_actiongetpoint.h">
+      <Filter>plugins\intern</Filter>
+    </QtMoc>
+    <QtMoc Include="plugins\intern\qc_actiongetselect.h">
+      <Filter>plugins\intern</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cmd\rs_commands.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\actions\rs_preview.h">
+      <Filter>lib\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\actions\rs_previewactioninterface.h">
+      <Filter>lib\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\actions\rs_snapper.h">
+      <Filter>lib\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\creation\rs_creation.h">
+      <Filter>lib\creation</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\debug\rs_debug.h">
+      <Filter>lib\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\lc_hyperbola.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\lc_rect.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\lc_splinepoints.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\lc_undosection.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_arc.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_atomicentity.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_block.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_blocklist.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_blocklistlistener.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_circle.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_clipboard.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_color.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_constructionline.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_dimaligned.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_dimangular.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_dimdiametric.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_dimension.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_dimlinear.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_dimradial.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_document.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_ellipse.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_entity.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_entitycontainer.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_flags.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_font.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_fontchar.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_fontlist.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_graphic.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_hatch.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_image.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_insert.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_layer.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_layerlist.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_layerlistlistener.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_leader.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_line.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_mtext.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_overlaybox.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_overlayline.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_pattern.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_patternlist.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_pen.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_point.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_polyline.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_settings.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_solid.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_spline.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_system.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_text.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_undo.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_undoable.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_undocycle.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_units.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_utility.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_variable.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_variabledict.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_vector.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fileio\rs_fileio.h">
+      <Filter>lib\fileio</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\filters\rs_filtercxf.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\filters\rs_filterdxfrw.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\filters\rs_filterinterface.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\filters\rs_filterlff.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\generators\lc_makercamsvg.h">
+      <Filter>lib\generators</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\generators\lc_xmlwriterinterface.h">
+      <Filter>lib\generators</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\generators\lc_xmlwriterqxmlstreamwriter.h">
+      <Filter>lib\generators</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_commandevent.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_coordinateevent.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_dialogfactory.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_dialogfactoryadapter.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_dialogfactoryinterface.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_grid.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_linetypepattern.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_mainwindowinterface.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_painter.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_painterqt.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_staticgraphicview.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\information\rs_infoarea.h">
+      <Filter>lib\information</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\information\rs_information.h">
+      <Filter>lib\information</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\information\rs_locale.h">
+      <Filter>lib\information</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\math\lc_quadratic.h">
+      <Filter>lib\math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\math\rs_math.h">
+      <Filter>lib\math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\math\TCALC.h">
+      <Filter>lib\math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\modification\rs_modification.h">
+      <Filter>lib\modification</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\modification\rs_selection.h">
+      <Filter>lib\modification</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\printing\lc_printing.h">
+      <Filter>lib\printing</Filter>
+    </ClInclude>
+    <ClInclude Include="main\doc_plugin_interface.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="main\main.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="main\qc_dialogfactory.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="main\console_dxf2pdf\console_dxf2pdf.h">
+      <Filter>main\console_dxf2pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\qg_dialogfactory.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\qg_filedialog.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\qg_mainwindowinterface.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\document_interface.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\qc_plugininterface.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\forms\lc_dlgsplinepoints.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\lc_widgetoptionsdialog.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_activelayername.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_arcoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_arctangentialoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_beveloptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_blockdialog.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_circleoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_circletan2options.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_commandwidget.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_coordinatewidget.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dimensionlabeleditor.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dimoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgarc.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgattributes.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgcircle.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgcopy.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgdimension.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgdimlinear.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgellipse.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlghatch.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgimage.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgimageoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlginitial.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlginsert.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgline.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgmirror.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgmoverotate.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgmtext.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgoptionsdrawing.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgoptionsgeneral.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgoptionsmakercam.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgpoint.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgpolyline.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgrotate.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgrotate2.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgscale.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgspline.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_dlgtext.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_exitdialog.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_imageoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_insertoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_layerdialog.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_libraryinsertoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_lineangleoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_linebisectoroptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_lineoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_lineparalleloptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_lineparallelthroughoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_linerelangleoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_modifyoffsetoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_mousewidget.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_moverotateoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_mtextoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_polylineequidistantoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_polylineoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_printpreviewoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_roundoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_selectionwidget.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_snapdistoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_snapmiddleoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_snaptoolbar.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_splineoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_textoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_trimamountoptions.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\forms\qg_widgetpen.ui">
+      <Filter>ui\forms</Filter>
+    </QtUic>
+    <QtUic Include="ui\generic\colorwizard.ui">
+      <Filter>ui\generic</Filter>
+    </QtUic>
+    <QtUic Include="ui\generic\comboboxoption.ui">
+      <Filter>ui\generic</Filter>
+    </QtUic>
+    <QtUic Include="ui\generic\textfileviewer.ui">
+      <Filter>ui\generic</Filter>
+    </QtUic>
+    <QtUic Include="ui\generic\widgetcreator.ui">
+      <Filter>ui\generic</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

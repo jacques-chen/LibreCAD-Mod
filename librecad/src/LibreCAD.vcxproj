@@ -1,0 +1,1547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8778D722-5237-394C-B4F5-8C8FC508A678}</ProjectGuid>
+    <RootNamespace>LibreCAD</RootNamespace>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.18362.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\..\windows\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\generated\librecad\obj\</IntermediateDirectory>
+    <PrimaryOutput>LibreCAD</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\..\windows\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\generated\librecad\obj\</IntermediateDirectory>
+    <PrimaryOutput>LibreCAD</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\windows\</OutDir>
+    <IntDir>..\..\generated\librecad\obj\</IntDir>
+    <TargetName>LibreCAD</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\windows\</OutDir>
+    <IntDir>..\..\..\generated\librecad\obj\</IntDir>
+    <TargetName>LibreCAD</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;svg;widgets;printsupport</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;gui;svg;widgets;printsupport</QtModules>
+    <QtDeploy>true</QtDeploy>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\..\libraries\eigen;..\..\libraries\libdxfrw\src;cmd;lib\actions;lib\creation;lib\debug;lib\engine;lib\fileio;lib\filters;lib\generators;lib\gui;lib\information;lib\math;lib\modification;lib\printing;actions;main;main\console_dxf2pdf;test;plugins;ui;ui\forms;ui\generic;..\res;..\..\..\generated\librecad\moc;..\..\..\generated\librecad\ui;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\..\generated\librecad\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>..\..\..\generated\librecad\obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DWGSUPPORT;_USE_MATH_DEFINES;QC_APPDIR="LibreCAD";LC_VERSION="2.2.0-alpha";NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UndefinePreprocessorDefinitions>__STRICT_ANSI__;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dxfrw.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\generated\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\LibreCAD.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>2.2</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DWGSUPPORT;_USE_MATH_DEFINES;QC_APPDIR="LibreCAD";LC_VERSION="2.2.0-alpha";NDEBUG;QT_NO_DEBUG;QT_SVG_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>./../../scripts/postprocess-win.bat 2.2.0-alpha</Command>
+      <Message>./../../scripts/postprocess-win.bat 2.2.0-alpha</Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>../../../generated/librecad/moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>..\..\..\generated\librecad\moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>..\..\..\generated\librecad\rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>..\..\..\generated\librecad\ui</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\..\libraries\eigen;..\..\libraries\libdxfrw\src;cmd;lib\actions;lib\creation;lib\debug;lib\engine;lib\fileio;lib\filters;lib\generators;lib\gui;lib\information;lib\math;lib\modification;lib\printing;actions;main;main\console_dxf2pdf;test;plugins;ui;ui\forms;ui\generic;..\res;..\..\generated\librecad\moc;..\..\generated\librecad\ui;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\generated\librecad\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>..\..\generated\librecad\obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DWGSUPPORT;_USE_MATH_DEFINES;QC_APPDIR="LibreCAD";LC_VERSION="2.2.0-alpha";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UndefinePreprocessorDefinitions>__STRICT_ANSI__;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dxfrw.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\generated\lib;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\LibreCAD.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>2.2</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DWGSUPPORT;_USE_MATH_DEFINES;QC_APPDIR="LibreCAD";LC_VERSION="2.2.0-alpha";QT_SVG_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>./../../scripts/postprocess-win.bat 2.2.0-alpha</Command>
+      <Message>./../../scripts/postprocess-win.bat 2.2.0-alpha</Message>
+    </PostBuildEvent>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>D:/DEV/Prj/LibreCAD_V2.2/Src/generated/librecad/moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>..\..\generated\librecad\moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>..\..\generated\librecad\rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>..\..\generated\librecad\ui</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\ts\librecad_en.ts" />
+    <None Include="..\ts\librecad_zh_cn.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\icons\add.svg" />
+    <None Include="..\res\icons\angle_line_to_line.svg" />
+    <None Include="..\res\icons\append_node.svg" />
+    <None Include="..\res\icons\arc_3_points.svg" />
+    <None Include="..\res\icons\arc_center_point_angle.svg" />
+    <None Include="..\res\icons\arc_concentric.svg" />
+    <None Include="..\res\icons\arc_continuation.svg" />
+    <None Include="..\res\icons\attributes.svg" />
+    <None Include="..\res\icons\bevel.svg" />
+    <None Include="..\res\icons\black_n_white_mode.svg" />
+    <None Include="..\res\ui\blockdefreeze.png" />
+    <None Include="..\res\ui\blockfreeze.png" />
+    <None Include="..\res\icons\camera.svg" />
+    <None Include="..\res\icons\center_to_page.svg" />
+    <None Include="..\res\extui\char_diameter.png" />
+    <None Include="..\res\extui\char_pm.png" />
+    <None Include="..\res\icons\circle.svg" />
+    <None Include="..\res\icons\circle_2_points.svg" />
+    <None Include="..\res\icons\circle_2_points_radius.svg" />
+    <None Include="..\res\icons\circle_3_points.svg" />
+    <None Include="..\res\icons\circle_center_point.svg" />
+    <None Include="..\res\icons\circle_center_radius.svg" />
+    <None Include="..\res\icons\circle_concentric.svg" />
+    <None Include="..\res\icons\circle_inscribed.svg" />
+    <None Include="..\res\icons\circle_tangential_2circles_point.svg" />
+    <None Include="..\res\icons\circle_tangential_2circles_radius.svg" />
+    <None Include="..\res\icons\circle_tangential_2points.svg" />
+    <None Include="..\res\icons\circle_tangential_3entities.svg" />
+    <None Include="..\res\icons\close.svg" />
+    <None Include="..\res\icons\close_all.svg" />
+    <None Include="..\res\ui\color00.png" />
+    <None Include="..\res\ui\color01.png" />
+    <None Include="..\res\ui\color02.png" />
+    <None Include="..\res\ui\color03.png" />
+    <None Include="..\res\ui\color04.png" />
+    <None Include="..\res\ui\color05.png" />
+    <None Include="..\res\ui\color06.png" />
+    <None Include="..\res\ui\color07.png" />
+    <None Include="..\res\ui\color08.png" />
+    <None Include="..\res\ui\color09.png" />
+    <None Include="..\res\ui\color11.png" />
+    <None Include="..\res\ui\color14.png" />
+    <None Include="..\res\ui\colorxx.png" />
+    <None Include="..\res\icons\construction_layer.svg" />
+    <None Include="..\res\icons\copy.svg" />
+    <None Include="..\res\icons\create_block.svg" />
+    <None Include="..\res\icons\create_equidistant_polyline.svg" />
+    <None Include="..\res\icons\create_menu.svg" />
+    <None Include="..\res\icons\create_polyline_from_existing_segments.svg" />
+    <None Include="..\res\icons\create_toolbar.svg" />
+    <None Include="..\res\ui\cur_cad_bmp.png" />
+    <None Include="..\res\ui\cur_del_bmp.png" />
+    <None Include="..\res\ui\cur_glass_bmp.png" />
+    <None Include="..\res\ui\cur_hand_bmp.png" />
+    <None Include="..\res\ui\cur_select_bmp.png" />
+    <None Include="..\res\icons\cursor.svg" />
+    <None Include="..\res\icons\cut.svg" />
+    <None Include="..\res\icons\delete.svg" />
+    <None Include="..\res\icons\delete_between_nodes.svg" />
+    <None Include="..\res\icons\delete_node.svg" />
+    <None Include="..\res\icons\deselect_all.svg" />
+    <None Include="..\res\icons\deselect_contour.svg" />
+    <None Include="..\res\icons\deselect_intersected_entities.svg" />
+    <None Include="..\res\icons\deselect_layer.svg" />
+    <None Include="..\res\icons\deselect_window.svg" />
+    <None Include="..\res\icons\dim_aligned.svg" />
+    <None Include="..\res\icons\dim_angular.svg" />
+    <None Include="..\res\icons\dim_diametric.svg" />
+    <None Include="..\res\icons\dim_leader.svg" />
+    <None Include="..\res\icons\dim_linear.svg" />
+    <None Include="..\res\icons\dim_radial.svg" />
+    <None Include="..\res\extui\dirneg.png" />
+    <None Include="..\res\extui\dirpos.png" />
+    <None Include="..\res\icons\distance_point_to_entity.svg" />
+    <None Include="..\res\icons\distance_point_to_point.svg" />
+    <None Include="..\res\icons\divide.svg" />
+    <None Include="..\res\extui\dlgmodifymirror.png" />
+    <None Include="..\res\extui\dlgmodifymoverotate.png" />
+    <None Include="..\res\extui\dlgmodifyrotate.png" />
+    <None Include="..\res\extui\dlgmodifyrotate2.png" />
+    <None Include="..\res\extui\dlgmodifyscale.png" />
+    <None Include="..\res\extui\dlgmove1.png" />
+    <None Include="..\res\icons\dockwidgets_bottom.svg" />
+    <None Include="..\res\icons\dockwidgets_floating.svg" />
+    <None Include="..\res\icons\dockwidgets_left.svg" />
+    <None Include="..\res\icons\dockwidgets_right.svg" />
+    <None Include="..\res\icons\dockwidgets_top.svg" />
+    <None Include="..\res\main\document.png" />
+    <None Include="..\res\icons\down.svg" />
+    <None Include="..\res\icons\downmost.svg" />
+    <None Include="..\res\icons\draft.svg" />
+    <None Include="..\res\icons\drawing_settings.svg" />
+    <None Include="..\res\main\editclear.png" />
+    <None Include="..\res\icons\ellipse_4_points.svg" />
+    <None Include="..\res\icons\ellipse_arc_axis.svg" />
+    <None Include="..\res\icons\ellipse_axis.svg" />
+    <None Include="..\res\icons\ellipse_center_3_points.svg" />
+    <None Include="..\res\icons\ellipse_foci_point.svg" />
+    <None Include="..\res\icons\ellipse_inscribed.svg" />
+    <None Include="..\res\icons\ellipses.svg" />
+    <None Include="..\res\icons\exclusive.svg" />
+    <None Include="..\res\icons\explode.svg" />
+    <None Include="..\res\icons\explode_text_to_letters.svg" />
+    <None Include="..\res\icons\export.svg" />
+    <None Include="..\res\icons\export_image.svg" />
+    <None Include="..\res\icons\export_pdf.svg" />
+    <QtRcc Include="..\res\extui\extui.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">extui</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">extui</InitFuncName>
+    </QtRcc>
+    <None Include="..\res\icons\fillet.svg" />
+    <None Include="..\res\icons\fit_to_page.svg" />
+    <None Include="..\res\ui\folderclosed.png" />
+    <None Include="..\res\ui\folderopen.png" />
+    <None Include="..\..\licenses\gpl-2.0.txt" />
+    <None Include="..\res\icons\grid.svg" />
+    <None Include="..\res\icons\hatch.svg" />
+    <None Include="..\res\ui\hiddenblock.png" />
+    <QtRcc Include="..\res\icons\icons.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">icons</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">icons</InitFuncName>
+    </QtRcc>
+    <None Include="..\res\icons\import.svg" />
+    <None Include="..\res\icons\insert_active_block.svg" />
+    <None Include="..\res\icons\insert_node.svg" />
+    <None Include="..\res\main\intro_librecad.png" />
+    <None Include="..\res\icons\invisible.svg" />
+    <None Include="..\res\ui\layertoggle.png" />
+    <None Include="..\res\main\librecad.png" />
+    <QtRcc Include="..\..\licenses\licenses.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">licenses</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">licenses</InitFuncName>
+    </QtRcc>
+    <None Include="..\res\icons\line.svg" />
+    <None Include="..\res\icons\line_2p.svg" />
+    <None Include="..\res\icons\line_angle.svg" />
+    <None Include="..\res\icons\line_bisector.svg" />
+    <None Include="..\res\icons\line_freehand.svg" />
+    <None Include="..\res\icons\line_horizontal.svg" />
+    <None Include="..\res\icons\line_parallel.svg" />
+    <None Include="..\res\icons\line_parallel_p.svg" />
+    <None Include="..\res\icons\line_perpendicular.svg" />
+    <None Include="..\res\icons\line_rectangle.svg" />
+    <None Include="..\res\icons\line_relative_angle.svg" />
+    <None Include="..\res\icons\line_tangent_cc.svg" />
+    <None Include="..\res\icons\line_tangent_pc.svg" />
+    <None Include="..\res\icons\line_tangent_perpendicular.svg" />
+    <None Include="..\res\icons\line_vertical.svg" />
+    <None Include="..\res\ui\linetype00.png" />
+    <None Include="..\res\ui\linetype01.png" />
+    <None Include="..\res\ui\linetype02.png" />
+    <None Include="..\res\ui\linetype03.png" />
+    <None Include="..\res\ui\linetype04.png" />
+    <None Include="..\res\ui\linetype05.png" />
+    <None Include="..\res\ui\linetype06.png" />
+    <None Include="..\res\ui\linetype07.png" />
+    <None Include="..\res\icons\lock_rel_zero.svg" />
+    <None Include="..\res\icons\locked.svg" />
+    <None Include="..\res\ui\lockedlayer.png" />
+    <QtRcc Include="..\res\main\main.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main</InitFuncName>
+    </QtRcc>
+    <None Include="..\res\icons\measure.svg" />
+    <None Include="..\res\icons\mirror.svg" />
+    <None Include="..\res\icons\modify.svg" />
+    <None Include="..\res\icons\modify_copy.svg" />
+    <None Include="..\res\icons\modify_move.svg" />
+    <None Include="..\res\icons\mouse.svg" />
+    <None Include="..\res\icons\move_rotate.svg" />
+    <None Include="..\res\icons\mtext_align_bottomcenter.svg" />
+    <None Include="..\res\icons\mtext_align_bottomleft.svg" />
+    <None Include="..\res\icons\mtext_align_bottomright.svg" />
+    <None Include="..\res\icons\mtext_align_middlecenter.svg" />
+    <None Include="..\res\icons\mtext_align_middleleft.svg" />
+    <None Include="..\res\icons\mtext_align_middleright.svg" />
+    <None Include="..\res\icons\mtext_align_topcenter.svg" />
+    <None Include="..\res\icons\mtext_align_topleft.svg" />
+    <None Include="..\res\icons\mtext_align_topright.svg" />
+    <None Include="..\res\icons\multi_pages.svg" />
+    <None Include="..\res\icons\new.svg" />
+    <None Include="..\res\icons\new_from_template.svg" />
+    <None Include="..\res\icons\noconstruction.svg" />
+    <None Include="..\res\icons\noprint.svg" />
+    <None Include="..\res\icons\offset.svg" />
+    <None Include="..\res\icons\open.svg" />
+    <None Include="..\res\icons\options.svg" />
+    <None Include="..\res\icons\paste.svg" />
+    <None Include="..\res\icons\points.svg" />
+    <None Include="..\res\icons\polygonal_area.svg" />
+    <None Include="..\res\icons\polylines.svg" />
+    <None Include="..\res\icons\polylines_polyline.svg" />
+    <None Include="..\res\icons\print.svg" />
+    <None Include="..\res\icons\print_preview.svg" />
+    <None Include="..\res\icons\properties.svg" />
+    <None Include="..\res\icons\quit.svg" />
+    <None Include="..\..\licenses\readme.md" />
+    <None Include="..\res\icons\redo.svg" />
+    <None Include="..\res\icons\redraw.svg" />
+    <None Include="..\res\extui\relzerolock.png" />
+    <None Include="..\res\extui\relzeromove.png" />
+    <None Include="..\res\icons\remove.svg" />
+    <None Include="..\res\icons\rename_active_block.svg" />
+    <None Include="..\res\icons\restr_hor.svg" />
+    <None Include="..\res\icons\restr_ortho.svg" />
+    <None Include="..\res\icons\restr_ver.svg" />
+    <None Include="..\res\extui\restricthorizontal.png" />
+    <None Include="..\res\extui\restrictnothing.png" />
+    <None Include="..\res\icons\revert_direction.svg" />
+    <None Include="..\res\icons\rotate.svg" />
+    <None Include="..\res\icons\rotate2.svg" />
+    <None Include="..\res\icons\save.svg" />
+    <None Include="..\res\icons\save_all.svg" />
+    <None Include="..\res\icons\save_as.svg" />
+    <None Include="..\res\icons\scale.svg" />
+    <None Include="..\res\icons\scaleLineWidth.svg" />
+    <None Include="..\res\icons\select.svg" />
+    <None Include="..\res\icons\select_all.svg" />
+    <None Include="..\res\icons\select_entity.svg" />
+    <None Include="..\res\icons\select_intersected_entities.svg" />
+    <None Include="..\res\icons\select_inverted.svg" />
+    <None Include="..\res\icons\select_window.svg" />
+    <None Include="..\res\icons\set_rel_zero.svg" />
+    <None Include="..\res\icons\settings.svg" />
+    <None Include="..\res\icons\snap_center.svg" />
+    <None Include="..\res\icons\snap_distance.svg" />
+    <None Include="..\res\icons\snap_endpoints.svg" />
+    <None Include="..\res\icons\snap_entity.svg" />
+    <None Include="..\res\icons\snap_exclusive.svg" />
+    <None Include="..\res\icons\snap_free.svg" />
+    <None Include="..\res\icons\snap_grid.svg" />
+    <None Include="..\res\icons\snap_intersection.svg" />
+    <None Include="..\res\icons\snap_middle.svg" />
+    <None Include="..\res\extui\snapcenter.png" />
+    <None Include="..\res\extui\snapendpoint.png" />
+    <None Include="..\res\extui\snapgrid.png" />
+    <None Include="..\res\extui\snapintersection.png" />
+    <None Include="..\res\extui\snapintersectionm.png" />
+    <None Include="..\res\extui\snapmiddle.png" />
+    <None Include="..\res\extui\snaponentity.png" />
+    <None Include="..\res\main\splash_librecad.png" />
+    <None Include="..\res\icons\spline.svg" />
+    <None Include="..\res\icons\spline_points.svg" />
+    <None Include="..\res\icons\stretch.svg" />
+    <None Include="..\res\icons\text.svg" />
+    <None Include="..\res\icons\text_align_baselinecenter.svg" />
+    <None Include="..\res\icons\text_align_baselineleft.svg" />
+    <None Include="..\res\icons\text_align_baselineright.svg" />
+    <None Include="..\res\icons\text_align_bottomcenter.svg" />
+    <None Include="..\res\icons\text_align_bottomleft.svg" />
+    <None Include="..\res\icons\text_align_bottomright.svg" />
+    <None Include="..\res\icons\text_align_middlecenter.svg" />
+    <None Include="..\res\icons\text_align_middleleft.svg" />
+    <None Include="..\res\icons\text_align_middleright.svg" />
+    <None Include="..\res\icons\text_align_topcenter.svg" />
+    <None Include="..\res\icons\text_align_topleft.svg" />
+    <None Include="..\res\icons\text_align_topright.svg" />
+    <None Include="..\res\extui\tolerance1.png" />
+    <None Include="..\res\extui\tolerance2.png" />
+    <None Include="..\res\icons\total_length_selected_entities.svg" />
+    <None Include="..\res\icons\trim.svg" />
+    <None Include="..\res\icons\trim2.svg" />
+    <None Include="..\res\icons\trim_segments.svg" />
+    <None Include="..\res\icons\trim_value.svg" />
+    <QtRcc Include="..\res\ui\ui.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui</InitFuncName>
+    </QtRcc>
+    <None Include="..\res\icons\undo.svg" />
+    <None Include="..\res\icons\unlocked.svg" />
+    <None Include="..\res\ui\unlockedlayer.png" />
+    <None Include="..\res\icons\up.svg" />
+    <None Include="..\res\icons\upmost.svg" />
+    <None Include="..\res\icons\visible.svg" />
+    <None Include="..\res\ui\visibleblock.png" />
+    <None Include="..\res\ui\width00.png" />
+    <None Include="..\res\ui\width01.png" />
+    <None Include="..\res\ui\width02.png" />
+    <None Include="..\res\ui\width03.png" />
+    <None Include="..\res\ui\width04.png" />
+    <None Include="..\res\ui\width05.png" />
+    <None Include="..\res\ui\width06.png" />
+    <None Include="..\res\ui\width07.png" />
+    <None Include="..\res\ui\width08.png" />
+    <None Include="..\res\ui\width09.png" />
+    <None Include="..\res\ui\width10.png" />
+    <None Include="..\res\ui\width11.png" />
+    <None Include="..\res\ui\width12.png" />
+    <None Include="..\res\icons\zoom_auto.svg" />
+    <None Include="..\res\icons\zoom_in.svg" />
+    <None Include="..\res\icons\zoom_out.svg" />
+    <None Include="..\res\icons\zoom_pan.svg" />
+    <None Include="..\res\icons\zoom_previous.svg" />
+    <None Include="..\res\icons\zoom_window.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\res\main\librecad.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="actions\lc_actiondrawcircle2pr.cpp" />
+    <ClCompile Include="actions\lc_actiondrawsplinepoints.cpp" />
+    <ClCompile Include="actions\lc_actionfileexportmakercam.cpp" />
+    <ClCompile Include="actions\lc_actionlayerstoggleconstruction.cpp" />
+    <ClCompile Include="actions\rs_actionblocksadd.cpp" />
+    <ClCompile Include="actions\rs_actionblocksattributes.cpp" />
+    <ClCompile Include="actions\rs_actionblockscreate.cpp" />
+    <ClCompile Include="actions\rs_actionblocksedit.cpp" />
+    <ClCompile Include="actions\rs_actionblocksexplode.cpp" />
+    <ClCompile Include="actions\rs_actionblocksfreezeall.cpp" />
+    <ClCompile Include="actions\rs_actionblocksinsert.cpp" />
+    <ClCompile Include="actions\rs_actionblocksremove.cpp" />
+    <ClCompile Include="actions\rs_actionblockssave.cpp" />
+    <ClCompile Include="actions\rs_actionblockstoggleview.cpp" />
+    <ClCompile Include="actions\rs_actiondefault.cpp" />
+    <ClCompile Include="actions\rs_actiondimaligned.cpp" />
+    <ClCompile Include="actions\rs_actiondimangular.cpp" />
+    <ClCompile Include="actions\rs_actiondimdiametric.cpp" />
+    <ClCompile Include="actions\rs_actiondimension.cpp" />
+    <ClCompile Include="actions\rs_actiondimleader.cpp" />
+    <ClCompile Include="actions\rs_actiondimlinear.cpp" />
+    <ClCompile Include="actions\rs_actiondimradial.cpp" />
+    <ClCompile Include="actions\rs_actiondrawarc.cpp" />
+    <ClCompile Include="actions\rs_actiondrawarc3p.cpp" />
+    <ClCompile Include="actions\rs_actiondrawarctangential.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircle.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircle2p.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircle3p.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcirclecr.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircleinscribe.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircletan1_2p.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircletan2.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircletan2_1p.cpp" />
+    <ClCompile Include="actions\rs_actiondrawcircletan3.cpp" />
+    <ClCompile Include="actions\rs_actiondrawellipse4points.cpp" />
+    <ClCompile Include="actions\rs_actiondrawellipseaxis.cpp" />
+    <ClCompile Include="actions\rs_actiondrawellipsecenter3points.cpp" />
+    <ClCompile Include="actions\rs_actiondrawellipsefocipoint.cpp" />
+    <ClCompile Include="actions\rs_actiondrawellipseinscribe.cpp" />
+    <ClCompile Include="actions\rs_actiondrawhatch.cpp" />
+    <ClCompile Include="actions\rs_actiondrawimage.cpp" />
+    <ClCompile Include="actions\rs_actiondrawline.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlineangle.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlinebisector.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlinefree.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlinehorvert.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlineorthtan.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlineparallel.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlineparallelthrough.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlinerectangle.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlinerelangle.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlinetangent1.cpp" />
+    <ClCompile Include="actions\rs_actiondrawlinetangent2.cpp" />
+    <ClCompile Include="actions\rs_actiondrawmtext.cpp" />
+    <ClCompile Include="actions\rs_actiondrawpoint.cpp" />
+    <ClCompile Include="actions\rs_actiondrawpolyline.cpp" />
+    <ClCompile Include="actions\rs_actiondrawspline.cpp" />
+    <ClCompile Include="actions\rs_actiondrawtext.cpp" />
+    <ClCompile Include="actions\rs_actioneditcopy.cpp" />
+    <ClCompile Include="actions\rs_actioneditpaste.cpp" />
+    <ClCompile Include="actions\rs_actioneditundo.cpp" />
+    <ClCompile Include="actions\rs_actionfilenew.cpp" />
+    <ClCompile Include="actions\rs_actionfilenewtemplate.cpp" />
+    <ClCompile Include="actions\rs_actionfileopen.cpp" />
+    <ClCompile Include="actions\rs_actionfilesave.cpp" />
+    <ClCompile Include="actions\rs_actionfilesaveas.cpp" />
+    <ClCompile Include="actions\rs_actioninfoangle.cpp" />
+    <ClCompile Include="actions\rs_actioninfoarea.cpp" />
+    <ClCompile Include="actions\rs_actioninfodist.cpp" />
+    <ClCompile Include="actions\rs_actioninfodist2.cpp" />
+    <ClCompile Include="actions\rs_actioninfoinside.cpp" />
+    <ClCompile Include="actions\rs_actioninfototallength.cpp" />
+    <ClCompile Include="actions\rs_actionlayersadd.cpp" />
+    <ClCompile Include="actions\rs_actionlayersedit.cpp" />
+    <ClCompile Include="actions\rs_actionlayersfreezeall.cpp" />
+    <ClCompile Include="actions\rs_actionlayerslockall.cpp" />
+    <ClCompile Include="actions\rs_actionlayersremove.cpp" />
+    <ClCompile Include="actions\rs_actionlayerstogglelock.cpp" />
+    <ClCompile Include="actions\rs_actionlayerstoggleprint.cpp" />
+    <ClCompile Include="actions\rs_actionlayerstoggleview.cpp" />
+    <ClCompile Include="actions\rs_actionlibraryinsert.cpp" />
+    <ClCompile Include="actions\rs_actionlockrelativezero.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyattributes.cpp" />
+    <ClCompile Include="actions\rs_actionmodifybevel.cpp" />
+    <ClCompile Include="actions\rs_actionmodifycopy.cpp" />
+    <ClCompile Include="actions\rs_actionmodifycut.cpp" />
+    <ClCompile Include="actions\rs_actionmodifydelete.cpp" />
+    <ClCompile Include="actions\rs_actionmodifydeletefree.cpp" />
+    <ClCompile Include="actions\rs_actionmodifydeletequick.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyentity.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyexplodetext.cpp" />
+    <ClCompile Include="actions\rs_actionmodifymirror.cpp" />
+    <ClCompile Include="actions\rs_actionmodifymove.cpp" />
+    <ClCompile Include="actions\rs_actionmodifymoverotate.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyoffset.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyrevertdirection.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyrotate.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyrotate2.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyround.cpp" />
+    <ClCompile Include="actions\rs_actionmodifyscale.cpp" />
+    <ClCompile Include="actions\rs_actionmodifystretch.cpp" />
+    <ClCompile Include="actions\rs_actionmodifytrim.cpp" />
+    <ClCompile Include="actions\rs_actionmodifytrimamount.cpp" />
+    <ClCompile Include="actions\rs_actionoptionsdrawing.cpp" />
+    <ClCompile Include="actions\rs_actionorder.cpp" />
+    <ClCompile Include="actions\rs_actionpolylineadd.cpp" />
+    <ClCompile Include="actions\rs_actionpolylineappend.cpp" />
+    <ClCompile Include="actions\rs_actionpolylinedel.cpp" />
+    <ClCompile Include="actions\rs_actionpolylinedelbetween.cpp" />
+    <ClCompile Include="actions\rs_actionpolylineequidistant.cpp" />
+    <ClCompile Include="actions\rs_actionpolylinesegment.cpp" />
+    <ClCompile Include="actions\rs_actionpolylinetrim.cpp" />
+    <ClCompile Include="actions\rs_actionprintpreview.cpp" />
+    <ClCompile Include="actions\rs_actionselect.cpp" />
+    <ClCompile Include="actions\rs_actionselectall.cpp" />
+    <ClCompile Include="actions\rs_actionselectbase.cpp" />
+    <ClCompile Include="actions\rs_actionselectcontour.cpp" />
+    <ClCompile Include="actions\rs_actionselectintersected.cpp" />
+    <ClCompile Include="actions\rs_actionselectinvert.cpp" />
+    <ClCompile Include="actions\rs_actionselectlayer.cpp" />
+    <ClCompile Include="actions\rs_actionselectsingle.cpp" />
+    <ClCompile Include="actions\rs_actionselectwindow.cpp" />
+    <ClCompile Include="actions\rs_actionsetrelativezero.cpp" />
+    <ClCompile Include="actions\rs_actionsetsnapmode.cpp" />
+    <ClCompile Include="actions\rs_actionsetsnaprestriction.cpp" />
+    <ClCompile Include="actions\rs_actionsnapintersectionmanual.cpp" />
+    <ClCompile Include="actions\rs_actiontoolregeneratedimensions.cpp" />
+    <ClCompile Include="actions\rs_actionzoomauto.cpp" />
+    <ClCompile Include="actions\rs_actionzoomautoy.cpp" />
+    <ClCompile Include="actions\rs_actionzoomin.cpp" />
+    <ClCompile Include="actions\rs_actionzoompan.cpp" />
+    <ClCompile Include="actions\rs_actionzoomprevious.cpp" />
+    <ClCompile Include="actions\rs_actionzoomredraw.cpp" />
+    <ClCompile Include="actions\rs_actionzoomscroll.cpp" />
+    <ClCompile Include="actions\rs_actionzoomwindow.cpp" />
+    <ClCompile Include="cmd\rs_commands.cpp" />
+    <ClCompile Include="lib\actions\rs_actioninterface.cpp" />
+    <ClCompile Include="lib\actions\rs_preview.cpp" />
+    <ClCompile Include="lib\actions\rs_previewactioninterface.cpp" />
+    <ClCompile Include="lib\actions\rs_snapper.cpp" />
+    <ClCompile Include="lib\creation\rs_creation.cpp" />
+    <ClCompile Include="lib\debug\rs_debug.cpp" />
+    <ClCompile Include="lib\engine\lc_hyperbola.cpp" />
+    <ClCompile Include="lib\engine\lc_rect.cpp" />
+    <ClCompile Include="lib\engine\lc_splinepoints.cpp" />
+    <ClCompile Include="lib\engine\lc_undosection.cpp" />
+    <ClCompile Include="lib\engine\rs.cpp" />
+    <ClCompile Include="lib\engine\rs_arc.cpp" />
+    <ClCompile Include="lib\engine\rs_atomicentity.cpp" />
+    <ClCompile Include="lib\engine\rs_block.cpp" />
+    <ClCompile Include="lib\engine\rs_blocklist.cpp" />
+    <ClCompile Include="lib\engine\rs_circle.cpp" />
+    <ClCompile Include="lib\engine\rs_clipboard.cpp" />
+    <ClCompile Include="lib\engine\rs_color.cpp" />
+    <ClCompile Include="lib\engine\rs_constructionline.cpp" />
+    <ClCompile Include="lib\engine\rs_dimaligned.cpp" />
+    <ClCompile Include="lib\engine\rs_dimangular.cpp" />
+    <ClCompile Include="lib\engine\rs_dimdiametric.cpp" />
+    <ClCompile Include="lib\engine\rs_dimension.cpp" />
+    <ClCompile Include="lib\engine\rs_dimlinear.cpp" />
+    <ClCompile Include="lib\engine\rs_dimradial.cpp" />
+    <ClCompile Include="lib\engine\rs_document.cpp" />
+    <ClCompile Include="lib\engine\rs_ellipse.cpp" />
+    <ClCompile Include="lib\engine\rs_entity.cpp" />
+    <ClCompile Include="lib\engine\rs_entitycontainer.cpp" />
+    <ClCompile Include="lib\engine\rs_flags.cpp" />
+    <ClCompile Include="lib\engine\rs_font.cpp" />
+    <ClCompile Include="lib\engine\rs_fontlist.cpp" />
+    <ClCompile Include="lib\engine\rs_graphic.cpp" />
+    <ClCompile Include="lib\engine\rs_hatch.cpp" />
+    <ClCompile Include="lib\engine\rs_image.cpp" />
+    <ClCompile Include="lib\engine\rs_insert.cpp" />
+    <ClCompile Include="lib\engine\rs_layer.cpp" />
+    <ClCompile Include="lib\engine\rs_layerlist.cpp" />
+    <ClCompile Include="lib\engine\rs_leader.cpp" />
+    <ClCompile Include="lib\engine\rs_line.cpp" />
+    <ClCompile Include="lib\engine\rs_mtext.cpp" />
+    <ClCompile Include="lib\engine\rs_overlaybox.cpp" />
+    <ClCompile Include="lib\engine\rs_overlayline.cpp" />
+    <ClCompile Include="lib\engine\rs_pattern.cpp" />
+    <ClCompile Include="lib\engine\rs_patternlist.cpp" />
+    <ClCompile Include="lib\engine\rs_pen.cpp" />
+    <ClCompile Include="lib\engine\rs_point.cpp" />
+    <ClCompile Include="lib\engine\rs_polyline.cpp" />
+    <ClCompile Include="lib\engine\rs_settings.cpp" />
+    <ClCompile Include="lib\engine\rs_solid.cpp" />
+    <ClCompile Include="lib\engine\rs_spline.cpp" />
+    <ClCompile Include="lib\engine\rs_system.cpp" />
+    <ClCompile Include="lib\engine\rs_text.cpp" />
+    <ClCompile Include="lib\engine\rs_undo.cpp" />
+    <ClCompile Include="lib\engine\rs_undoable.cpp" />
+    <ClCompile Include="lib\engine\rs_undocycle.cpp" />
+    <ClCompile Include="lib\engine\rs_units.cpp" />
+    <ClCompile Include="lib\engine\rs_utility.cpp" />
+    <ClCompile Include="lib\engine\rs_variabledict.cpp" />
+    <ClCompile Include="lib\engine\rs_vector.cpp" />
+    <ClCompile Include="lib\fileio\rs_fileio.cpp" />
+    <ClCompile Include="lib\filters\rs_filtercxf.cpp" />
+    <ClCompile Include="lib\filters\rs_filterdxfrw.cpp" />
+    <ClCompile Include="lib\filters\rs_filterlff.cpp" />
+    <ClCompile Include="lib\generators\lc_makercamsvg.cpp" />
+    <ClCompile Include="lib\generators\lc_xmlwriterqxmlstreamwriter.cpp" />
+    <ClCompile Include="lib\gui\rs_dialogfactory.cpp" />
+    <ClCompile Include="lib\gui\rs_eventhandler.cpp" />
+    <ClCompile Include="lib\gui\rs_graphicview.cpp" />
+    <ClCompile Include="lib\gui\rs_grid.cpp" />
+    <ClCompile Include="lib\gui\rs_linetypepattern.cpp" />
+    <ClCompile Include="lib\gui\rs_painter.cpp" />
+    <ClCompile Include="lib\gui\rs_painterqt.cpp" />
+    <ClCompile Include="lib\gui\rs_staticgraphicview.cpp" />
+    <ClCompile Include="lib\information\rs_infoarea.cpp" />
+    <ClCompile Include="lib\information\rs_information.cpp" />
+    <ClCompile Include="lib\information\rs_locale.cpp" />
+    <ClCompile Include="lib\math\lc_quadratic.cpp" />
+    <ClCompile Include="lib\math\rs_math.cpp" />
+    <ClCompile Include="lib\math\TCALC.cpp" />
+    <ClCompile Include="lib\modification\rs_modification.cpp" />
+    <ClCompile Include="lib\modification\rs_selection.cpp" />
+    <ClCompile Include="lib\printing\lc_printing.cpp" />
+    <ClCompile Include="main\console_dxf2pdf\console_dxf2pdf.cpp" />
+    <ClCompile Include="main\console_dxf2pdf\pdf_print_loop.cpp" />
+    <ClCompile Include="main\doc_plugin_interface.cpp" />
+    <ClCompile Include="main\lc_application.cpp" />
+    <ClCompile Include="main\main.cpp" />
+    <ClCompile Include="main\mainwindowx.cpp" />
+    <ClCompile Include="main\qc_applicationwindow.cpp" />
+    <ClCompile Include="main\qc_dialogfactory.cpp" />
+    <ClCompile Include="main\qc_mdiwindow.cpp" />
+    <ClCompile Include="plugins\intern\qc_actiongetent.cpp" />
+    <ClCompile Include="plugins\intern\qc_actiongetpoint.cpp" />
+    <ClCompile Include="plugins\intern\qc_actiongetselect.cpp" />
+    <ClCompile Include="test\lc_simpletests.cpp" />
+    <ClCompile Include="ui\forms\lc_dlgsplinepoints.cpp" />
+    <ClCompile Include="ui\forms\lc_widgetoptionsdialog.cpp" />
+    <ClCompile Include="ui\forms\qg_activelayername.cpp" />
+    <ClCompile Include="ui\forms\qg_arcoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_arctangentialoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_beveloptions.cpp" />
+    <ClCompile Include="ui\forms\qg_blockdialog.cpp" />
+    <ClCompile Include="ui\forms\qg_circleoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_circletan2options.cpp" />
+    <ClCompile Include="ui\forms\qg_commandwidget.cpp" />
+    <ClCompile Include="ui\forms\qg_coordinatewidget.cpp" />
+    <ClCompile Include="ui\forms\qg_dimensionlabeleditor.cpp" />
+    <ClCompile Include="ui\forms\qg_dimoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgarc.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgattributes.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgcircle.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgcopy.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgdimension.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgdimlinear.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgellipse.cpp" />
+    <ClCompile Include="ui\forms\qg_dlghatch.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgimage.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgimageoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_dlginitial.cpp" />
+    <ClCompile Include="ui\forms\qg_dlginsert.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgline.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgmirror.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgmoverotate.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgmtext.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgoptionsdrawing.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgoptionsgeneral.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgoptionsmakercam.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgpoint.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgpolyline.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgrotate.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgrotate2.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgscale.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgspline.cpp" />
+    <ClCompile Include="ui\forms\qg_dlgtext.cpp" />
+    <ClCompile Include="ui\forms\qg_exitdialog.cpp" />
+    <ClCompile Include="ui\forms\qg_imageoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_insertoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_layerdialog.cpp" />
+    <ClCompile Include="ui\forms\qg_libraryinsertoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_lineangleoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_linebisectoroptions.cpp" />
+    <ClCompile Include="ui\forms\qg_lineoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_lineparalleloptions.cpp" />
+    <ClCompile Include="ui\forms\qg_lineparallelthroughoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_linerelangleoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_modifyoffsetoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_mousewidget.cpp" />
+    <ClCompile Include="ui\forms\qg_moverotateoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_mtextoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_polylineequidistantoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_polylineoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_printpreviewoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_roundoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_selectionwidget.cpp" />
+    <ClCompile Include="ui\forms\qg_snapdistoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_snapmiddleoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_snaptoolbar.cpp" />
+    <ClCompile Include="ui\forms\qg_splineoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_textoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_trimamountoptions.cpp" />
+    <ClCompile Include="ui\forms\qg_widgetpen.cpp" />
+    <ClCompile Include="ui\generic\actionlist.cpp" />
+    <ClCompile Include="ui\generic\colorcombobox.cpp" />
+    <ClCompile Include="ui\generic\colorwizard.cpp" />
+    <ClCompile Include="ui\generic\comboboxoption.cpp" />
+    <ClCompile Include="ui\generic\linklist.cpp" />
+    <ClCompile Include="ui\generic\textfileviewer.cpp" />
+    <ClCompile Include="ui\generic\widgetcreator.cpp" />
+    <ClCompile Include="ui\lc_actionfactory.cpp" />
+    <ClCompile Include="ui\lc_actiongroupmanager.cpp" />
+    <ClCompile Include="ui\lc_centralwidget.cpp" />
+    <ClCompile Include="ui\lc_dockwidget.cpp" />
+    <ClCompile Include="ui\lc_penwizard.cpp" />
+    <ClCompile Include="ui\lc_widgetfactory.cpp" />
+    <ClCompile Include="ui\lg_dimzerosbox.cpp" />
+    <ClCompile Include="ui\qg_actionhandler.cpp" />
+    <ClCompile Include="ui\qg_blockwidget.cpp" />
+    <ClCompile Include="ui\qg_colorbox.cpp" />
+    <ClCompile Include="ui\qg_commandedit.cpp" />
+    <ClCompile Include="ui\qg_commandhistory.cpp" />
+    <ClCompile Include="ui\qg_dialogfactory.cpp" />
+    <ClCompile Include="ui\qg_filedialog.cpp" />
+    <ClCompile Include="ui\qg_fontbox.cpp" />
+    <ClCompile Include="ui\qg_graphicview.cpp" />
+    <ClCompile Include="ui\qg_layerbox.cpp" />
+    <ClCompile Include="ui\qg_layerwidget.cpp" />
+    <ClCompile Include="ui\qg_librarywidget.cpp" />
+    <ClCompile Include="ui\qg_linetypebox.cpp" />
+    <ClCompile Include="ui\qg_patternbox.cpp" />
+    <ClCompile Include="ui\qg_pentoolbar.cpp" />
+    <ClCompile Include="ui\qg_recentfiles.cpp" />
+    <ClCompile Include="ui\qg_widthbox.cpp" />
+    <ClCompile Include="ui\twostackedlabels.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\lc_actiondrawcircle2pr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\lc_actiondrawsplinepoints.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\lc_actionfileexportmakercam.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\lc_actionlayerstoggleconstruction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblocksadd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblocksattributes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblockscreate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblocksedit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblocksexplode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblocksfreezeall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblocksinsert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblocksremove.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblockssave.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionblockstoggleview.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondefault.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondimaligned.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondimangular.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondimdiametric.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondimension.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondimleader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondimlinear.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondimradial.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawarc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawarc3p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawarctangential.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircle2p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircle3p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcirclecr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircleinscribe.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircletan1_2p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircletan2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircletan2_1p.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawcircletan3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawellipse4points.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawellipseaxis.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawellipsecenter3points.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawellipsefocipoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawellipseinscribe.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawhatch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawimage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlineangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlinebisector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlinefree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlinehorvert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlineorthtan.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlineparallel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlineparallelthrough.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlinerectangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlinerelangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlinetangent1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawlinetangent2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawmtext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawpoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawpolyline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawspline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiondrawtext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioneditcopy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioneditpaste.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioneditundo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionfilenew.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionfilenewtemplate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionfileopen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionfilesave.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionfilesaveas.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioninfoangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioninfoarea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioninfodist.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioninfodist2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioninfoinside.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actioninfototallength.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayersadd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayersedit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayersfreezeall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayerslockall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayersremove.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayerstogglelock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayerstoggleprint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlayerstoggleview.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlibraryinsert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionlockrelativezero.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyattributes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifybevel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifycopy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifycut.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifydelete.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifydeletefree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifydeletequick.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyentity.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyexplodetext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifymirror.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifymove.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifymoverotate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyoffset.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyrevertdirection.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyrotate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyrotate2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyround.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifyscale.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifystretch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifytrim.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionmodifytrimamount.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionoptionsdrawing.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionorder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionpolylineadd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionpolylineappend.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionpolylinedel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionpolylinedelbetween.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionpolylineequidistant.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionpolylinesegment.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionpolylinetrim.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionprintpreview.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectbase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectcontour.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectintersected.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectinvert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectlayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectsingle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionselectwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionsetrelativezero.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionsetsnapmode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionsetsnaprestriction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionsnapintersectionmanual.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actiontoolregeneratedimensions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoomauto.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoomautoy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoomin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoompan.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoomprevious.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoomredraw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoomscroll.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="actions\rs_actionzoomwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cmd\rs_commands.h" />
+    <ClInclude Include="lib\actions\rs_preview.h" />
+    <ClInclude Include="lib\actions\rs_previewactioninterface.h" />
+    <ClInclude Include="lib\actions\rs_snapper.h" />
+    <ClInclude Include="lib\creation\rs_creation.h" />
+    <ClInclude Include="lib\debug\rs_debug.h" />
+    <ClInclude Include="lib\engine\lc_hyperbola.h" />
+    <ClInclude Include="lib\engine\lc_rect.h" />
+    <ClInclude Include="lib\engine\lc_splinepoints.h" />
+    <ClInclude Include="lib\engine\lc_undosection.h" />
+    <ClInclude Include="lib\engine\rs.h" />
+    <ClInclude Include="lib\engine\rs_arc.h" />
+    <ClInclude Include="lib\engine\rs_atomicentity.h" />
+    <ClInclude Include="lib\engine\rs_block.h" />
+    <ClInclude Include="lib\engine\rs_blocklist.h" />
+    <ClInclude Include="lib\engine\rs_blocklistlistener.h" />
+    <ClInclude Include="lib\engine\rs_circle.h" />
+    <ClInclude Include="lib\engine\rs_clipboard.h" />
+    <ClInclude Include="lib\engine\rs_color.h" />
+    <ClInclude Include="lib\engine\rs_constructionline.h" />
+    <ClInclude Include="lib\engine\rs_dimaligned.h" />
+    <ClInclude Include="lib\engine\rs_dimangular.h" />
+    <ClInclude Include="lib\engine\rs_dimdiametric.h" />
+    <ClInclude Include="lib\engine\rs_dimension.h" />
+    <ClInclude Include="lib\engine\rs_dimlinear.h" />
+    <ClInclude Include="lib\engine\rs_dimradial.h" />
+    <ClInclude Include="lib\engine\rs_document.h" />
+    <ClInclude Include="lib\engine\rs_ellipse.h" />
+    <ClInclude Include="lib\engine\rs_entity.h" />
+    <ClInclude Include="lib\engine\rs_entitycontainer.h" />
+    <ClInclude Include="lib\engine\rs_flags.h" />
+    <ClInclude Include="lib\engine\rs_font.h" />
+    <ClInclude Include="lib\engine\rs_fontchar.h" />
+    <ClInclude Include="lib\engine\rs_fontlist.h" />
+    <ClInclude Include="lib\engine\rs_graphic.h" />
+    <ClInclude Include="lib\engine\rs_hatch.h" />
+    <ClInclude Include="lib\engine\rs_image.h" />
+    <ClInclude Include="lib\engine\rs_insert.h" />
+    <ClInclude Include="lib\engine\rs_layer.h" />
+    <ClInclude Include="lib\engine\rs_layerlist.h" />
+    <ClInclude Include="lib\engine\rs_layerlistlistener.h" />
+    <ClInclude Include="lib\engine\rs_leader.h" />
+    <ClInclude Include="lib\engine\rs_line.h" />
+    <ClInclude Include="lib\engine\rs_mtext.h" />
+    <ClInclude Include="lib\engine\rs_overlaybox.h" />
+    <ClInclude Include="lib\engine\rs_overlayline.h" />
+    <ClInclude Include="lib\engine\rs_pattern.h" />
+    <ClInclude Include="lib\engine\rs_patternlist.h" />
+    <ClInclude Include="lib\engine\rs_pen.h" />
+    <ClInclude Include="lib\engine\rs_point.h" />
+    <ClInclude Include="lib\engine\rs_polyline.h" />
+    <ClInclude Include="lib\engine\rs_settings.h" />
+    <ClInclude Include="lib\engine\rs_solid.h" />
+    <ClInclude Include="lib\engine\rs_spline.h" />
+    <ClInclude Include="lib\engine\rs_system.h" />
+    <ClInclude Include="lib\engine\rs_text.h" />
+    <ClInclude Include="lib\engine\rs_undo.h" />
+    <ClInclude Include="lib\engine\rs_undoable.h" />
+    <ClInclude Include="lib\engine\rs_undocycle.h" />
+    <ClInclude Include="lib\engine\rs_units.h" />
+    <ClInclude Include="lib\engine\rs_utility.h" />
+    <ClInclude Include="lib\engine\rs_variable.h" />
+    <ClInclude Include="lib\engine\rs_variabledict.h" />
+    <ClInclude Include="lib\engine\rs_vector.h" />
+    <ClInclude Include="lib\fileio\rs_fileio.h" />
+    <ClInclude Include="lib\filters\rs_filtercxf.h" />
+    <ClInclude Include="lib\filters\rs_filterdxfrw.h" />
+    <ClInclude Include="lib\filters\rs_filterinterface.h" />
+    <ClInclude Include="lib\filters\rs_filterlff.h" />
+    <ClInclude Include="lib\generators\lc_makercamsvg.h" />
+    <ClInclude Include="lib\generators\lc_xmlwriterinterface.h" />
+    <ClInclude Include="lib\generators\lc_xmlwriterqxmlstreamwriter.h" />
+    <ClInclude Include="lib\gui\rs_commandevent.h" />
+    <ClInclude Include="lib\gui\rs_coordinateevent.h" />
+    <ClInclude Include="lib\gui\rs_dialogfactory.h" />
+    <ClInclude Include="lib\gui\rs_dialogfactoryadapter.h" />
+    <ClInclude Include="lib\gui\rs_dialogfactoryinterface.h" />
+    <ClInclude Include="lib\gui\rs_grid.h" />
+    <ClInclude Include="lib\gui\rs_linetypepattern.h" />
+    <ClInclude Include="lib\gui\rs_mainwindowinterface.h" />
+    <ClInclude Include="lib\gui\rs_painter.h" />
+    <ClInclude Include="lib\gui\rs_painterqt.h" />
+    <ClInclude Include="lib\gui\rs_staticgraphicview.h" />
+    <ClInclude Include="lib\information\rs_infoarea.h" />
+    <ClInclude Include="lib\information\rs_information.h" />
+    <ClInclude Include="lib\information\rs_locale.h" />
+    <ClInclude Include="lib\math\lc_quadratic.h" />
+    <ClInclude Include="lib\math\rs_math.h" />
+    <ClInclude Include="lib\math\TCALC.h" />
+    <ClInclude Include="lib\modification\rs_modification.h" />
+    <ClInclude Include="lib\modification\rs_selection.h" />
+    <ClInclude Include="lib\printing\lc_printing.h" />
+    <ClInclude Include="main\console_dxf2pdf\console_dxf2pdf.h" />
+    <ClInclude Include="plugins\document_interface.h" />
+    <QtMoc Include="plugins\intern\qc_actiongetselect.h" />
+    <QtMoc Include="plugins\intern\qc_actiongetpoint.h" />
+    <QtMoc Include="plugins\intern\qc_actiongetent.h" />
+    <ClInclude Include="plugins\qc_plugininterface.h" />
+    <QtMoc Include="test\lc_simpletests.h" />
+    <QtMoc Include="ui\generic\widgetcreator.h" />
+    <QtMoc Include="ui\generic\textfileviewer.h" />
+    <QtMoc Include="ui\generic\linklist.h" />
+    <QtMoc Include="ui\generic\comboboxoption.h" />
+    <QtMoc Include="ui\generic\colorwizard.h" />
+    <QtMoc Include="ui\generic\colorcombobox.h" />
+    <QtMoc Include="ui\generic\actionlist.h" />
+    <QtMoc Include="ui\forms\qg_widgetpen.h" />
+    <QtMoc Include="ui\forms\qg_trimamountoptions.h" />
+    <QtMoc Include="ui\forms\qg_textoptions.h" />
+    <QtMoc Include="ui\forms\qg_splineoptions.h" />
+    <QtMoc Include="ui\forms\qg_snaptoolbar.h" />
+    <QtMoc Include="ui\forms\qg_snapmiddleoptions.h" />
+    <QtMoc Include="ui\forms\qg_snapdistoptions.h" />
+    <QtMoc Include="ui\forms\qg_selectionwidget.h" />
+    <QtMoc Include="ui\forms\qg_roundoptions.h" />
+    <QtMoc Include="ui\forms\qg_printpreviewoptions.h" />
+    <QtMoc Include="ui\forms\qg_polylineoptions.h" />
+    <QtMoc Include="ui\forms\qg_polylineequidistantoptions.h" />
+    <QtMoc Include="ui\forms\qg_mtextoptions.h" />
+    <QtMoc Include="ui\forms\qg_moverotateoptions.h" />
+    <QtMoc Include="ui\forms\qg_mousewidget.h" />
+    <QtMoc Include="ui\forms\qg_modifyoffsetoptions.h" />
+    <QtMoc Include="ui\forms\qg_linerelangleoptions.h" />
+    <QtMoc Include="ui\forms\qg_lineparallelthroughoptions.h" />
+    <QtMoc Include="ui\forms\qg_lineparalleloptions.h" />
+    <QtMoc Include="ui\forms\qg_lineoptions.h" />
+    <QtMoc Include="ui\forms\qg_linebisectoroptions.h" />
+    <QtMoc Include="ui\forms\qg_lineangleoptions.h" />
+    <QtMoc Include="ui\forms\qg_libraryinsertoptions.h" />
+    <QtMoc Include="ui\forms\qg_layerdialog.h" />
+    <QtMoc Include="ui\forms\qg_insertoptions.h" />
+    <QtMoc Include="ui\forms\qg_imageoptions.h" />
+    <QtMoc Include="ui\forms\qg_exitdialog.h" />
+    <QtMoc Include="ui\forms\qg_dlgtext.h" />
+    <QtMoc Include="ui\forms\qg_dlgspline.h" />
+    <QtMoc Include="ui\forms\qg_dlgscale.h" />
+    <QtMoc Include="ui\forms\qg_dlgrotate2.h" />
+    <QtMoc Include="ui\forms\qg_dlgrotate.h" />
+    <QtMoc Include="ui\forms\qg_dlgpolyline.h" />
+    <QtMoc Include="ui\forms\qg_dlgpoint.h" />
+    <QtMoc Include="ui\forms\qg_dlgoptionsmakercam.h" />
+    <QtMoc Include="ui\forms\qg_dlgoptionsgeneral.h" />
+    <QtMoc Include="ui\forms\qg_dlgoptionsdrawing.h" />
+    <QtMoc Include="ui\forms\qg_dlgmtext.h" />
+    <QtMoc Include="ui\forms\qg_dlgmoverotate.h" />
+    <QtMoc Include="ui\forms\qg_dlgmirror.h" />
+    <QtMoc Include="ui\forms\qg_dlgline.h" />
+    <QtMoc Include="ui\forms\qg_dlginsert.h" />
+    <QtMoc Include="ui\forms\qg_dlginitial.h" />
+    <QtMoc Include="ui\forms\qg_dlgimageoptions.h" />
+    <QtMoc Include="ui\forms\qg_dlgimage.h" />
+    <QtMoc Include="ui\forms\qg_dlghatch.h" />
+    <QtMoc Include="ui\forms\qg_dlgellipse.h" />
+    <QtMoc Include="ui\forms\qg_dlgdimlinear.h" />
+    <QtMoc Include="ui\forms\qg_dlgdimension.h" />
+    <QtMoc Include="ui\forms\qg_dlgcopy.h" />
+    <QtMoc Include="ui\forms\qg_dlgcircle.h" />
+    <QtMoc Include="ui\forms\qg_dlgattributes.h" />
+    <QtMoc Include="ui\forms\qg_dlgarc.h" />
+    <QtMoc Include="ui\forms\qg_dimoptions.h" />
+    <QtMoc Include="ui\forms\qg_dimensionlabeleditor.h" />
+    <QtMoc Include="ui\forms\qg_coordinatewidget.h" />
+    <QtMoc Include="ui\forms\qg_commandwidget.h" />
+    <QtMoc Include="ui\forms\qg_circletan2options.h" />
+    <QtMoc Include="ui\forms\qg_circleoptions.h" />
+    <QtMoc Include="ui\forms\qg_blockdialog.h" />
+    <QtMoc Include="ui\forms\qg_beveloptions.h" />
+    <QtMoc Include="ui\forms\qg_arctangentialoptions.h" />
+    <QtMoc Include="ui\forms\qg_arcoptions.h" />
+    <QtMoc Include="ui\forms\qg_activelayername.h" />
+    <QtMoc Include="ui\forms\lc_widgetoptionsdialog.h" />
+    <QtMoc Include="ui\forms\lc_dlgsplinepoints.h" />
+    <ClInclude Include="ui\qg_dialogfactory.h" />
+    <ClInclude Include="ui\qg_filedialog.h" />
+    <ClInclude Include="ui\qg_mainwindowinterface.h" />
+    <QtMoc Include="ui\twostackedlabels.h" />
+    <QtMoc Include="ui\qg_widthbox.h" />
+    <QtMoc Include="ui\qg_scrollbar.h" />
+    <QtMoc Include="ui\qg_recentfiles.h" />
+    <QtMoc Include="ui\qg_pentoolbar.h" />
+    <QtMoc Include="ui\qg_patternbox.h" />
+    <QtMoc Include="ui\qg_linetypebox.h" />
+    <QtMoc Include="ui\qg_librarywidget.h" />
+    <QtMoc Include="ui\qg_layerwidget.h" />
+    <QtMoc Include="ui\qg_layerbox.h" />
+    <QtMoc Include="ui\qg_graphicview.h" />
+    <QtMoc Include="ui\qg_fontbox.h" />
+    <QtMoc Include="ui\qg_commandhistory.h" />
+    <QtMoc Include="ui\qg_commandedit.h" />
+    <QtMoc Include="ui\qg_colorbox.h" />
+    <QtMoc Include="ui\qg_blockwidget.h" />
+    <QtMoc Include="ui\qg_actionhandler.h" />
+    <QtMoc Include="ui\lg_dimzerosbox.h" />
+    <QtMoc Include="ui\lc_widgetfactory.h" />
+    <QtMoc Include="ui\lc_penwizard.h" />
+    <QtMoc Include="ui\lc_dockwidget.h" />
+    <QtMoc Include="ui\lc_centralwidget.h" />
+    <QtMoc Include="ui\lc_actiongroupmanager.h" />
+    <QtMoc Include="ui\lc_actionfactory.h" />
+    <QtMoc Include="main\console_dxf2pdf\pdf_print_loop.h" />
+    <ClInclude Include="main\doc_plugin_interface.h" />
+    <ClInclude Include="main\main.h" />
+    <ClInclude Include="main\qc_dialogfactory.h" />
+    <QtMoc Include="main\qc_mdiwindow.h" />
+    <QtMoc Include="main\qc_applicationwindow.h" />
+    <QtMoc Include="main\mainwindowx.h" />
+    <QtMoc Include="main\lc_application.h" />
+    <QtMoc Include="lib\gui\rs_graphicview.h" />
+    <QtMoc Include="lib\gui\rs_eventhandler.h" />
+    <QtMoc Include="lib\actions\rs_actioninterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\forms\lc_dlgsplinepoints.ui" />
+    <QtUic Include="ui\forms\lc_widgetoptionsdialog.ui" />
+    <QtUic Include="ui\forms\qg_activelayername.ui" />
+    <QtUic Include="ui\forms\qg_arcoptions.ui" />
+    <QtUic Include="ui\forms\qg_arctangentialoptions.ui" />
+    <QtUic Include="ui\forms\qg_beveloptions.ui" />
+    <QtUic Include="ui\forms\qg_blockdialog.ui" />
+    <QtUic Include="ui\forms\qg_circleoptions.ui" />
+    <QtUic Include="ui\forms\qg_circletan2options.ui" />
+    <QtUic Include="ui\forms\qg_commandwidget.ui" />
+    <QtUic Include="ui\forms\qg_coordinatewidget.ui" />
+    <QtUic Include="ui\forms\qg_dimensionlabeleditor.ui" />
+    <QtUic Include="ui\forms\qg_dimoptions.ui" />
+    <QtUic Include="ui\forms\qg_dlgarc.ui" />
+    <QtUic Include="ui\forms\qg_dlgattributes.ui" />
+    <QtUic Include="ui\forms\qg_dlgcircle.ui" />
+    <QtUic Include="ui\forms\qg_dlgcopy.ui" />
+    <QtUic Include="ui\forms\qg_dlgdimension.ui" />
+    <QtUic Include="ui\forms\qg_dlgdimlinear.ui" />
+    <QtUic Include="ui\forms\qg_dlgellipse.ui" />
+    <QtUic Include="ui\forms\qg_dlghatch.ui" />
+    <QtUic Include="ui\forms\qg_dlgimage.ui" />
+    <QtUic Include="ui\forms\qg_dlgimageoptions.ui" />
+    <QtUic Include="ui\forms\qg_dlginitial.ui" />
+    <QtUic Include="ui\forms\qg_dlginsert.ui" />
+    <QtUic Include="ui\forms\qg_dlgline.ui" />
+    <QtUic Include="ui\forms\qg_dlgmirror.ui" />
+    <QtUic Include="ui\forms\qg_dlgmoverotate.ui" />
+    <QtUic Include="ui\forms\qg_dlgmtext.ui" />
+    <QtUic Include="ui\forms\qg_dlgoptionsdrawing.ui" />
+    <QtUic Include="ui\forms\qg_dlgoptionsgeneral.ui" />
+    <QtUic Include="ui\forms\qg_dlgoptionsmakercam.ui" />
+    <QtUic Include="ui\forms\qg_dlgpoint.ui" />
+    <QtUic Include="ui\forms\qg_dlgpolyline.ui" />
+    <QtUic Include="ui\forms\qg_dlgrotate.ui" />
+    <QtUic Include="ui\forms\qg_dlgrotate2.ui" />
+    <QtUic Include="ui\forms\qg_dlgscale.ui" />
+    <QtUic Include="ui\forms\qg_dlgspline.ui" />
+    <QtUic Include="ui\forms\qg_dlgtext.ui" />
+    <QtUic Include="ui\forms\qg_exitdialog.ui" />
+    <QtUic Include="ui\forms\qg_imageoptions.ui" />
+    <QtUic Include="ui\forms\qg_insertoptions.ui" />
+    <QtUic Include="ui\forms\qg_layerdialog.ui" />
+    <QtUic Include="ui\forms\qg_libraryinsertoptions.ui" />
+    <QtUic Include="ui\forms\qg_lineangleoptions.ui" />
+    <QtUic Include="ui\forms\qg_linebisectoroptions.ui" />
+    <QtUic Include="ui\forms\qg_lineoptions.ui" />
+    <QtUic Include="ui\forms\qg_lineparalleloptions.ui" />
+    <QtUic Include="ui\forms\qg_lineparallelthroughoptions.ui" />
+    <QtUic Include="ui\forms\qg_linerelangleoptions.ui" />
+    <QtUic Include="ui\forms\qg_modifyoffsetoptions.ui" />
+    <QtUic Include="ui\forms\qg_mousewidget.ui" />
+    <QtUic Include="ui\forms\qg_moverotateoptions.ui" />
+    <QtUic Include="ui\forms\qg_mtextoptions.ui" />
+    <QtUic Include="ui\forms\qg_polylineequidistantoptions.ui" />
+    <QtUic Include="ui\forms\qg_polylineoptions.ui" />
+    <QtUic Include="ui\forms\qg_printpreviewoptions.ui" />
+    <QtUic Include="ui\forms\qg_roundoptions.ui" />
+    <QtUic Include="ui\forms\qg_selectionwidget.ui" />
+    <QtUic Include="ui\forms\qg_snapdistoptions.ui" />
+    <QtUic Include="ui\forms\qg_snapmiddleoptions.ui" />
+    <QtUic Include="ui\forms\qg_snaptoolbar.ui" />
+    <QtUic Include="ui\forms\qg_splineoptions.ui" />
+    <QtUic Include="ui\forms\qg_textoptions.ui" />
+    <QtUic Include="ui\forms\qg_trimamountoptions.ui" />
+    <QtUic Include="ui\forms\qg_widgetpen.ui" />
+    <QtUic Include="ui\generic\colorwizard.ui" />
+    <QtUic Include="ui\generic\comboboxoption.ui" />
+    <QtUic Include="ui\generic\textfileviewer.ui" />
+    <QtUic Include="ui\generic\widgetcreator.ui" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
