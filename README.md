@@ -1,7 +1,11 @@
+# This is a light version of LibreCAD.
+In this version, I replace boost to eigen and delete  jww ,  muparser libraries. 
+And i modify linear dimension, let it more closer to AutoCAD.
+I want delete eigen librarie and update it to QT6, is there any body can develop is with me?
+
+
+
 # LibreCAD [![Build Status](https://travis-ci.org/LibreCAD/LibreCAD.svg?branch=master)](https://travis-ci.org/LibreCAD/LibreCAD) 
-
-# In this mod, I replace boost to eigen and delete  jww ,  muparser libraries. Let source code light.
-
 
 
 [→ Download ←](https://github.com/LibreCAD/LibreCAD/wiki/Download)
