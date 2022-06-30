@@ -1,5 +1,9 @@
 # LibreCAD [![Build Status](https://travis-ci.org/LibreCAD/LibreCAD.svg?branch=master)](https://travis-ci.org/LibreCAD/LibreCAD) 
 
+# In this mod, I replace boost to eigen and delete  jww ,  muparser libraries. Let source code light.
+
+
+
 [→ Download ←](https://github.com/LibreCAD/LibreCAD/wiki/Download)
 
 [LibreCAD](https://www.librecad.org) is a 2D CAD drawing tool
@@ -22,6 +26,8 @@ The 2.0 branch will be the last to support the QCAD toolbar. [![Build Status](ht
 - [Milestones](https://github.com/LibreCAD/LibreCAD/milestones)
 
 [libdxfrw](https://sourceforge.net/projects/libdxfrw/) is an associated project that allows LibreCAD to read DWG files.
+
+
 
 **Requests and Bug reports**
 
